@@ -1,10 +1,5 @@
-.row{
-	border: 1px solid blue
-}
-
 .cards{
 	display: flex;
 	flex-wrap: wrap;
-	white-space: nowrap;
 	width: 100%;
 }
