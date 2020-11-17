@@ -13,9 +13,9 @@ function Card({title, year, creator, genre, episodes, image,handleClick } ){
 						<p className="subtitle is-7">{creator[0]}</p>
 						<div className="buttons are-small">
 						{
-							genre.map( (category, index) => <button key={index} className="button is-link is-light" value={category} onClick={handleClick}>{category}</button> )
+							genre.map( (category, index) => <button key={index} className="button is-link is-light" name={`genre`} value={category} onClick={handleClick}>{category}</button> )
 						}
-							<button className="button is-link is-light" value={year} onClick={handleClick}>{year}</button>
+							<button className="button is-link is-light" name="year" value={year} onClick={handleClick}>{year}</button>
 						</div>
 
 					</div>

@@ -1,28 +1,16 @@
-import React, {useState} from 'react'
+import React from 'react'
+import './Search.css'
 
-function Search(props){
-
-	const [formValue, setFormValue] = useState( {
-		field: 'year',
-		value: ''
-	})
-
-	const handleChange = (event) => {
-		setFormValue({
-			...formValue,
-			[event.target.name]: event.target.value
-		})
-	}
-
+function Search({handleChange, handleSubmit, handleReset, field, value}){
 	return(
-		<section className="section is-widescreen">
-			<form className="form is-fluid">
+		<section className="section">
+			<form className="form" onSubmit={handleSubmit}>
 				<div className="field has-addons">
-					<p className="control has-icons-left ">
+					<p className="control has-icons-left  ">
 				    <span className="select ">
-				      <select name="field" value={formValue.field} onChange={handleChange}>
+				      <select name="field" value={field} onChange={handleChange}>
 				        <option value="year">Year</option>
-				        <option value="category">Category</option>
+				        <option value="genre">Category</option>
 				        <option value="title">Title</option>
 				      </select>
 				    </span>
@@ -31,14 +19,24 @@ function Search(props){
              </span>
 					</p>
 					<p className="control is-expanded">
-						<input className="input" type="text" placeholder="es. 1999" name="value" value={formValue.value} onChange={handleChange}/>
+						<input className="input" type="text" placeholder="es. 1999" name="value" value={value} onChange={handleChange}/>
 					</p>
+				</div>
+
+				<div className="field is-grouped ">
 					<p className="control">
-						<button className="button is-info">
+						<button className="button is-primary">
 							Search
 						</button>
 					</p>
+					<p className="control">
+						<button className="button is-info is-light" type={`button`} onClick={handleReset}>
+							Reset
+						</button>
+					</p>
 				</div>
+
+
 			</form>
 		</section>
 

@@ -1,6 +1,7 @@
 ul li{
   list-style-type: none;
 }
-
+.section {
+  padding: 1.5rem 1rem !important;}
 
 

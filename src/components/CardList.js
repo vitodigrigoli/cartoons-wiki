@@ -8,7 +8,7 @@ function CardList({data, title, handleClick, isLoading}){
 
 	return(
 
-		<div className="row">
+		<div className="row section">
 			<h2 className={`title`}>{title}</h2>
 			<div className="">
 				{
