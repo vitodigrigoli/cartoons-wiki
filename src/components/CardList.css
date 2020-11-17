@@ -1,16 +1,10 @@
-#scroll{
-    /*overflow-x: scroll;
-    overflow-y: hidden;*/
-    overflow: auto;
-    width: 100%;
-    object-fit: contain;
-    border: 1px solid red !important;
-    white-space: nowrap;
-    display: flex;
-
-
+.row{
+	border: 1px solid blue
 }
 
-#scroll::-webkit-scrollbar{
-    display: none;
+.cards{
+	display: flex;
+	flex-wrap: wrap;
+	white-space: nowrap;
+	width: 100%;
 }

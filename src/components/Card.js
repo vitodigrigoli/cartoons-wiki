@@ -1,17 +1,15 @@
 import React from 'react'
+import './Card.css'
 
 function Card({title, year, creator, genre, episodes, image,handleClick } ){
 	return(
-		<div className="card column is-narrow is-one-fifth-desktop is-one-quarter-tablet is-half-mobile">
-			<div className="card-image">
-				<figure className="image">
-					<img src={`${image}`} alt={`${title}`}/>
-				</figure>
+		<div className="card">
+			<div className="card__image" style={{backgroundImage: "url(" + image + ")"}}>
 			</div>
-			<div className="card-content">
+			<div className="card__content">
 				<div className="media">
 					<div className="media-content">
-						<p className="title is-size-5 is-size-6-mobile">{title}</p>
+						<p className="title is-size-6 is-size-7-mobile">{title}</p>
 						<p className="subtitle is-7">{creator[0]}</p>
 						<div className="buttons are-small">
 						{
