@@ -94,7 +94,7 @@ function App() {
 	return (
 		<div className="App">
 			<div className="section logo has-text-centered">
-				<h1 className="has-text-weight-bold is-uppercase is-size-1">Cartoon wiki<i className="fas fa-tv ml-5"></i></h1>
+				<h1 className="has-text-weight-bold is-uppercase is-size-1">Cartoons wiki<i className="fas fa-tv ml-5"></i></h1>
 			</div>
 
 			<div className="container">
