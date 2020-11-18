@@ -92,10 +92,18 @@ function App() {
 	}, [ URL.cartoons3D ] )
 
 	return (
-		<div className="App container">
-			<Search handleChange={handleChange} handleSubmit={handleSubmit} handleReset={handleReset} field={formValue.field} value={formValue.value}/>
-			<CardList title="Cartoons 2D"  data={data2D} handleClick={handleClick} isLoading={isLoading}/>
-			<CardList title="Cartoons 3D"  data={data3D} handleClick={handleClick} isLoading={isLoading}/>
+		<div className="App">
+			<div className="section logo has-text-centered">
+				<h1 className="has-text-weight-bold is-uppercase is-size-1">Cartoon wiki<i className="fas fa-tv ml-5"></i></h1>
+			</div>
+
+			<div className="container">
+				<Search handleChange={handleChange} handleSubmit={handleSubmit} handleReset={handleReset} field={formValue.field} value={formValue.value}/>
+				<CardList title="Cartoons 2D"  data={data2D} handleClick={handleClick} isLoading={isLoading}/>
+				<CardList title="Cartoons 3D"  data={data3D} handleClick={handleClick} isLoading={isLoading}/>
+			</div>
+
+
 		</div>
 	);
 }

@@ -10,7 +10,6 @@ function Search({handleChange, handleSubmit, handleReset, field, value}){
 				    <span className="select ">
 				      <select name="field" value={field} onChange={handleChange}>
 				        <option value="year">Year</option>
-				        <option value="genre">Category</option>
 				        <option value="title">Title</option>
 				      </select>
 				    </span>

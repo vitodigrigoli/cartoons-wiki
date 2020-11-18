@@ -11,13 +11,14 @@ function Card({title, year, creator, genre, episodes, image,handleClick } ){
 					<div className="media-content">
 						<p className="title is-size-6 is-size-7-mobile">{title}</p>
 						<p className="subtitle is-7">{creator[0]}</p>
-						<div className="buttons are-small">
-						{
-							genre.map( (category, index) => <button key={index} className="button is-link is-light" name={`genre`} value={category} onClick={handleClick}>{category}</button> )
-						}
+						<p className={`is-size-7 has-text-weight-semibold`}>Category:
+							{
+								genre.map( (category, index) => <span key={index} className="is-size-7 ml-1 has-text-weight-normal">{category}</span> )
+							}
+						</p>
+						<div className="buttons are-small mt-3">
 							<button className="button is-link is-light" name="year" value={year} onClick={handleClick}>{year}</button>
 						</div>
-
 					</div>
 				</div>
 			</div>

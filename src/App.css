@@ -4,4 +4,28 @@ ul li{
 .section {
   padding: 1.5rem 1rem !important;}
 
+.logo{
+  background-color: #00d1b2 !important;
+  color: white !important;
+  width: 100vw !important;
+}
+
+.logo h1{
+  text-shadow: 2px 2px 8px #222;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  border-radius: 120px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 2vw 5vw
+}
+
+@media screen and (max-width: 426px) {
+
+  .logo h1{
+    font-size: 8vw !important;
+  }
+}
+
 
