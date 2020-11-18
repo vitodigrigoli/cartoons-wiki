@@ -44,7 +44,7 @@ function App() {
 			cartoons3D: `${baseURL}/cartoons3D`
 		})
 		setFormValue({
-			...formValue,
+			field: 'year',
 			value: ''
 		})
 	}
